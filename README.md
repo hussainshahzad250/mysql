@@ -15,7 +15,15 @@
     docker exec -it name-mysql mysql -uroot -p
   ```
 
-# Setup MYSQL Using my custom MySQL docker image with default username `  root ` and password `root`
+#  Create docker images from docker container and push to docker hub
+    docker commit <container_id> your-docker-hub-username/your-image-name:tag
+
+##  Ste-1 commit latest container changes, replace `90bb807b5928` with your docker container
+```  
+  docker commit 90bb807b5928 husssainshahzad/mysql:1.0
+```
+
+# Setup MySQL Using my custom MySQL docker image with default username `root` and password `root`
   
   ###  Pull docker image
   ```
